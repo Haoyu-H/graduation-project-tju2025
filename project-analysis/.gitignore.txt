@@ -1,1 +1,0 @@
-/project-analysis/saved_codebert_model/model.safetensors
