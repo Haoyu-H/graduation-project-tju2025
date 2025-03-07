@@ -1,0 +1,210 @@
+{
+    "OrderServiceImpl": {
+        "methods": {
+            "OrderServiceImpl.submitOrder(OrdersSubmitDTO ordersSubmitDTO)": [
+                "OrderServiceImpl.getById()",
+                "OrderServiceImpl.getCityName()",
+                "BaseContext.getCurrentId()",
+                "ShoppingCart.setUserId()",
+                "OrderServiceImpl.list()",
+                "OrderServiceImpl.size()",
+                "BeanUtils.copyProperties()",
+                "Orders.setOrderTime()",
+                "Orders.setPayStatus()",
+                "Orders.setStatus()",
+                "Orders.setNumber()",
+                "Orders.setPhone()",
+                "Orders.setConsignee()",
+                "Orders.setUserId()",
+                "OrderServiceImpl.insert()",
+                "OrderDetail.setOrderId()",
+                "OrderServiceImpl.add()",
+                "OrderServiceImpl.insertBatch()",
+                "OrderServiceImpl.deleteByUserId()",
+                "OrderSubmitVO.builder()",
+                "Orders.getNumber()",
+                "Orders.getAmount()",
+                "Orders.getId()"
+            ],
+            "OrderServiceImpl.payment(OrdersPaymentDTO ordersPaymentDTO)": [
+                "BaseContext.getCurrentId()",
+                "OrderServiceImpl.getById()",
+                "JSONObject.put()",
+                "JSONObject.toJavaObject()",
+                "OrderServiceImpl.setPackageStr()",
+                "LocalDateTime.now()",
+                "OrderServiceImpl.getOrderNumber()",
+                "OrderServiceImpl.info()",
+                "OrderServiceImpl.updateStatus()",
+                "HashMap.put()",
+                "JSON.toJSONString()",
+                "OrderServiceImpl.sendToAllClient()"
+            ],
+            "OrderServiceImpl.paySuccess(String outTradeNo)": [
+                "OrderServiceImpl.getByNumber()",
+                "Orders.builder()",
+                "OrderServiceImpl.getId()",
+                "LocalDateTime.now()",
+                "OrderServiceImpl.build()",
+                "OrderServiceImpl.update()",
+                "HashMap.put()",
+                "JSON.toJSONString()",
+                "OrderServiceImpl.sendToAllClient()"
+            ],
+            "OrderServiceImpl.pageQuery4User(int pageNum, int pageSize, Integer status)": [
+                "PageHelper.startPage()",
+                "OrdersPageQueryDTO.setUserId()",
+                "OrdersPageQueryDTO.setStatus()",
+                "OrderServiceImpl.pageQuery()",
+                "OrderServiceImpl.getTotal()",
+                "Orders.getId()",
+                "OrderServiceImpl.getByOrderId()",
+                "BeanUtils.copyProperties()",
+                "OrderVO.setOrderDetailList()",
+                "OrderServiceImpl.add()"
+            ],
+            "OrderServiceImpl.details(Long id)": [
+                "OrderServiceImpl.getById()",
+                "OrderServiceImpl.getByOrderId()",
+                "Orders.getAddressBookId()",
+                "OrderServiceImpl.getAddress()",
+                "Orders.setAddress()",
+                "BeanUtils.copyProperties()",
+                "OrderVO.setOrderDetailList()"
+            ],
+            "OrderServiceImpl.getAddress(Long addressBookId)": [
+                "OrderServiceImpl.getById()",
+                "OrderServiceImpl.getProvinceName()"
+            ],
+            "OrderServiceImpl.userCancelById(Long id)": [
+                "OrderServiceImpl.getById()",
+                "OrderServiceImpl.getStatus()",
+                "Orders.setId()",
+                "Orders.setPayStatus()",
+                "Orders.setStatus()",
+                "Orders.setCancelReason()",
+                "Orders.setCancelTime()",
+                "OrderServiceImpl.update()"
+            ],
+            "OrderServiceImpl.repetition(Long id)": [
+                "BaseContext.getCurrentId()",
+                "OrderServiceImpl.getByOrderId()",
+                "OrderServiceImpl.stream()",
+                "BeanUtils.copyProperties()",
+                "ShoppingCart.setUserId()",
+                "ShoppingCart.setCreateTime()",
+                "Collectors.toList()",
+                "OrderServiceImpl.insertBatch()"
+            ],
+            "OrderServiceImpl.conditionSearch(OrdersPageQueryDTO ordersPageQueryDTO)": [
+                "PageHelper.startPage()",
+                "OrderServiceImpl.pageQuery()",
+                "OrderServiceImpl.getOrderVOList()"
+            ],
+            "OrderServiceImpl.getOrderVOList(Page<Orders> page)": [
+                "OrderServiceImpl.getResult()",
+                "CollectionUtils.isEmpty()",
+                "Orders.getAddressBookId()",
+                "OrderServiceImpl.getAddress()",
+                "Orders.setAddress()",
+                "BeanUtils.copyProperties()",
+                "OrderServiceImpl.getOrderDishesStr()",
+                "OrderVO.setOrderDishes()",
+                "OrderServiceImpl.add()"
+            ],
+            "OrderServiceImpl.getOrderDishesStr(Orders orders)": [
+                "OrderServiceImpl.getByOrderId()",
+                "OrderServiceImpl.stream()",
+                "OrderServiceImpl.getName()",
+                "Collectors.toList()",
+                "String.join()"
+            ],
+            "OrderServiceImpl.statistics()": [
+                "OrderServiceImpl.countStatus()",
+                "OrderStatisticsVO.setToBeConfirmed()",
+                "OrderStatisticsVO.setConfirmed()",
+                "OrderStatisticsVO.setDeliveryInProgress()"
+            ],
+            "OrderServiceImpl.confirm(OrdersConfirmDTO ordersConfirmDTO)": [
+                "Orders.builder()",
+                "OrderServiceImpl.update()"
+            ],
+            "OrderServiceImpl.rejection(OrdersRejectionDTO ordersRejectionDTO)": [
+                "OrderServiceImpl.getById()",
+                "OrderServiceImpl.getStatus()",
+                "Orders.setId()",
+                "Orders.setStatus()",
+                "Orders.setRejectionReason()",
+                "Orders.setCancelTime()",
+                "OrderServiceImpl.update()"
+            ],
+            "OrderServiceImpl.cancel(OrdersCancelDTO ordersCancelDTO)": [
+                "OrderServiceImpl.getById()",
+                "Orders.setId()",
+                "Orders.setStatus()",
+                "Orders.setCancelReason()",
+                "Orders.setCancelTime()",
+                "OrderServiceImpl.update()"
+            ],
+            "OrderServiceImpl.delivery(Long id)": [
+                "OrderServiceImpl.getById()",
+                "OrderServiceImpl.getStatus()",
+                "Orders.setId()",
+                "Orders.setStatus()",
+                "OrderServiceImpl.update()"
+            ],
+            "OrderServiceImpl.complete(Long id)": [
+                "OrderServiceImpl.getById()",
+                "OrderServiceImpl.getStatus()",
+                "Orders.setId()"
+            ],
+            "OrderServiceImpl.checkOutOfRange(String address)": [
+                "HttpClientUtil.doGet()",
+                "JSON.parseObject()",
+                "JSONObject.getString()",
+                "JSONObject.getJSONObject()",
+                "OrderServiceImpl.getString()",
+                "HashMap.put()",
+                "OrderServiceImpl.get()"
+            ],
+            "OrderServiceImpl.reminder(Long id)": [
+                "OrderServiceImpl.getById()",
+                "HashMap.put()",
+                "OrderServiceImpl.sendToAllClient()"
+            ]
+        },
+        "method_count": 19
+    },
+    "CategoryController": {
+        "methods": {
+            "CategoryController.save(@RequestBody CategoryDTO categoryDTO)": [
+                "CategoryController.info()",
+                "CategoryController.save()",
+                "Result.success()"
+            ],
+            "CategoryController.page(CategoryPageQueryDTO categoryPageQueryDTO)": [
+                "CategoryController.info()",
+                "CategoryController.pageQuery()",
+                "Result.success()"
+            ],
+            "CategoryController.deleteById(Long id)": [
+                "CategoryController.info()",
+                "CategoryController.deleteById()",
+                "Result.success()"
+            ],
+            "CategoryController.update(@RequestBody CategoryDTO categoryDTO)": [
+                "CategoryController.update()",
+                "Result.success()"
+            ],
+            "CategoryController.startOrStop(@PathVariable(\"status\")": [
+                "CategoryController.startOrStop()",
+                "Result.success()"
+            ],
+            "CategoryController.list(Integer type)": [
+                "CategoryController.list()",
+                "Result.success()"
+            ]
+        },
+        "method_count": 6
+    }
+}

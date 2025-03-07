@@ -1,0 +1,32 @@
+{
+    "OrderServiceImpl": {
+        "methods": {
+            "OrderServiceImpl.submitOrder(OrdersSubmitDTO ordersSubmitDTO)": [
+                "OrderServiceImpl.getById()",
+                "OrderServiceImpl.getCityName()",
+                "BaseContext.getCurrentId()",
+                "ShoppingCart.setUserId()",
+                "OrderServiceImpl.list()",
+                "OrderServiceImpl.size()",
+                "BeanUtils.copyProperties()",
+                "Orders.setOrderTime()",
+                "Orders.setPayStatus()",
+                "Orders.setStatus()",
+                "Orders.setNumber()",
+                "Orders.setPhone()",
+                "Orders.setConsignee()",
+                "Orders.setUserId()",
+                "OrderServiceImpl.insert()",
+                "OrderDetail.setOrderId()",
+                "OrderServiceImpl.add()",
+                "OrderServiceImpl.insertBatch()",
+                "OrderServiceImpl.deleteByUserId()",
+                "OrderSubmitVO.builder()",
+                "Orders.getNumber()",
+                "Orders.getAmount()",
+                "Orders.getId()"
+            ]
+        },
+        "method_count": 1
+    }
+}
