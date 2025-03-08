@@ -13,9 +13,14 @@ class CommentCodeAnalyzer:
         self.model_path = model_path  # 本地模型路径
         self.tokenizer_path = tokenizer_path  # 本地tokenizer路径
         self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+        # self.model = AutoModelForSequenceClassification.from_pretrained(self.model_path, use_safetensors=False).to(self.device)
 
         # 加载本地保存的模型和 tokenizer
-        self.model = AutoModelForSequenceClassification.from_pretrained(self.model_path).to(self.device)
+        # self.model = AutoModelForSequenceClassification.from_pretrained(self.model_path).to(self.device)
+        self.model = AutoModelForSequenceClassification.from_pretrained(
+    self.model_path, 
+    use_safetensors=True
+).to(self.device)
         self.tokenizer = AutoTokenizer.from_pretrained(self.tokenizer_path)
 
     def detect_encoding(self, file_path: str) -> str:
