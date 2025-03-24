@@ -1,0 +1,107 @@
+{
+    "top_methods": [
+        {
+            "method": "serviceCache.get()",
+            "count": 5,
+            "source_code": "工具类、常量类或接口方法",
+            "callers": [
+                "serviceCache.addServcieToCache(String serviceName,String address)",
+                "serviceCache.replaceServiceAddress(String serviceName,String oldAddress,String newAddress)",
+                "serviceCache.getServcieFromCache(String serviceName)",
+                "serviceCache.delete(String serviceName,String address)",
+                "serviceCache.getServiceListFromCache(String serviceName)"
+            ]
+        },
+        {
+            "method": "RpcResponse.fail()",
+            "count": 4,
+            "source_code": "    public static RpcResponse fail(){\n        return RpcResponse.builder().code(500).message(\"服务器发生错误\").build();\n    }",
+            "callers": [
+                "WorkThread.getResponse(RpcRequest rpcRequest)",
+                "NettyRPCServerHandler.getResponse(RpcRequest rpcRequest)",
+                "JsonSerializer.deserialize(byte[] bytes, int messageType)",
+                "guavaRetry.sendServiceWithRetry(RpcRequest request, RpcClient rpcClient)"
+            ]
+        },
+        {
+            "method": "serviceCache.containsKey()",
+            "count": 4,
+            "source_code": "工具类、常量类或接口方法",
+            "callers": [
+                "serviceCache.addServcieToCache(String serviceName,String address)",
+                "serviceCache.replaceServiceAddress(String serviceName,String oldAddress,String newAddress)",
+                "serviceCache.getServcieFromCache(String serviceName)",
+                "serviceCache.getServiceListFromCache(String serviceName)"
+            ]
+        },
+        {
+            "method": "ConsistencyHashBalance.getHash(String str)",
+            "count": 4,
+            "source_code": "    private static int getHash(String str) {\n        final int p = 16777619;\n        int hash = (int) 2166136261L;\n        for (int i = 0; i < str.length(); i++)\n            hash = (hash ^ str.charAt(i)) * p;\n        hash += hash << 13;\n        hash ^= hash >> 7;\n        hash += hash << 3;\n        hash ^= hash >> 17;\n        hash += hash << 5;\n        // 如果算出来的值为负数则取其绝对值\n        if (hash < 0)\n            hash = Math.abs(hash);\n        return hash;\n    }",
+            "callers": [
+                "ConsistencyHashBalance.init(List<String> serviceList)",
+                "ConsistencyHashBalance.getServer(String node,List<String> serviceList)",
+                "ConsistencyHashBalance.addNode(String node)",
+                "ConsistencyHashBalance.delNode(String node)"
+            ]
+        },
+        {
+            "method": "serviceCache.println()",
+            "count": 3,
+            "source_code": "工具类、常量类或接口方法",
+            "callers": [
+                "serviceCache.addServcieToCache(String serviceName,String address)",
+                "serviceCache.replaceServiceAddress(String serviceName,String oldAddress,String newAddress)",
+                "serviceCache.delete(String serviceName,String address)"
+            ]
+        },
+        {
+            "method": "ConsistencyHashBalance.println()",
+            "count": 3,
+            "source_code": "工具类、常量类或接口方法",
+            "callers": [
+                "ConsistencyHashBalance.init(List<String> serviceList)",
+                "ConsistencyHashBalance.addNode(String node)",
+                "ConsistencyHashBalance.delNode(String node)"
+            ]
+        },
+        {
+            "method": "System.currentTimeMillis()",
+            "count": 3,
+            "source_code": "工具类、常量类或接口方法",
+            "callers": [
+                "CircuitBreaker.allowRequest()",
+                "CircuitBreaker.recordFailure()",
+                "TokenBucketRateLimitImpl.getToken()"
+            ]
+        },
+        {
+            "method": "CircuitBreaker.incrementAndGet()",
+            "count": 3,
+            "source_code": "工具类、常量类或接口方法",
+            "callers": [
+                "CircuitBreaker.allowRequest()",
+                "CircuitBreaker.recordSuccess()",
+                "CircuitBreaker.recordFailure()"
+            ]
+        },
+        {
+            "method": "RpcResponse.builder()",
+            "count": 2,
+            "source_code": "工具类、常量类或接口方法",
+            "callers": [
+                "RpcResponse.sussess(Object data)",
+                "RpcResponse.fail()"
+            ]
+        },
+        {
+            "method": "UserServiceImpl.println()",
+            "count": 2,
+            "source_code": "工具类、常量类或接口方法",
+            "callers": [
+                "UserServiceImpl.getUserByUserId(Integer id)",
+                "UserServiceImpl.insertUserId(User user)"
+            ]
+        }
+    ]
+}

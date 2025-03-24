@@ -1,32 +1,84 @@
 {
-    "OrderServiceImpl": {
-        "methods": {
-            "OrderServiceImpl.submitOrder(OrdersSubmitDTO ordersSubmitDTO)": [
-                "OrderServiceImpl.getById()",
-                "OrderServiceImpl.getCityName()",
-                "BaseContext.getCurrentId()",
-                "ShoppingCart.setUserId()",
-                "OrderServiceImpl.list()",
-                "OrderServiceImpl.size()",
-                "BeanUtils.copyProperties()",
-                "Orders.setOrderTime()",
-                "Orders.setPayStatus()",
-                "Orders.setStatus()",
-                "Orders.setNumber()",
-                "Orders.setPhone()",
-                "Orders.setConsignee()",
-                "Orders.setUserId()",
-                "OrderServiceImpl.insert()",
-                "OrderDetail.setOrderId()",
-                "OrderServiceImpl.add()",
-                "OrderServiceImpl.insertBatch()",
-                "OrderServiceImpl.deleteByUserId()",
-                "OrderSubmitVO.builder()",
-                "Orders.getNumber()",
-                "Orders.getAmount()",
-                "Orders.getId()"
+    "top_methods": [
+        {
+            "method": "OrderServiceImpl.getById()",
+            "count": 1,
+            "source_code": "工具类、常量类或接口方法",
+            "callers": [
+                "OrderServiceImpl.submitOrder(OrdersSubmitDTO ordersSubmitDTO)"
             ]
         },
-        "method_count": 1
-    }
+        {
+            "method": "OrderServiceImpl.getCityName()",
+            "count": 1,
+            "source_code": "工具类、常量类或接口方法",
+            "callers": [
+                "OrderServiceImpl.submitOrder(OrdersSubmitDTO ordersSubmitDTO)"
+            ]
+        },
+        {
+            "method": "BaseContext.getCurrentId()",
+            "count": 1,
+            "source_code": "工具类、常量类或接口方法",
+            "callers": [
+                "OrderServiceImpl.submitOrder(OrdersSubmitDTO ordersSubmitDTO)"
+            ]
+        },
+        {
+            "method": "OrderServiceImpl.setUserId()",
+            "count": 1,
+            "source_code": "工具类、常量类或接口方法",
+            "callers": [
+                "OrderServiceImpl.submitOrder(OrdersSubmitDTO ordersSubmitDTO)"
+            ]
+        },
+        {
+            "method": "OrderServiceImpl.list()",
+            "count": 1,
+            "source_code": "工具类、常量类或接口方法",
+            "callers": [
+                "OrderServiceImpl.submitOrder(OrdersSubmitDTO ordersSubmitDTO)"
+            ]
+        },
+        {
+            "method": "OrderServiceImpl.size()",
+            "count": 1,
+            "source_code": "工具类、常量类或接口方法",
+            "callers": [
+                "OrderServiceImpl.submitOrder(OrdersSubmitDTO ordersSubmitDTO)"
+            ]
+        },
+        {
+            "method": "BeanUtils.copyProperties()",
+            "count": 1,
+            "source_code": "工具类、常量类或接口方法",
+            "callers": [
+                "OrderServiceImpl.submitOrder(OrdersSubmitDTO ordersSubmitDTO)"
+            ]
+        },
+        {
+            "method": "OrderServiceImpl.setOrderTime()",
+            "count": 1,
+            "source_code": "工具类、常量类或接口方法",
+            "callers": [
+                "OrderServiceImpl.submitOrder(OrdersSubmitDTO ordersSubmitDTO)"
+            ]
+        },
+        {
+            "method": "OrderServiceImpl.setPayStatus()",
+            "count": 1,
+            "source_code": "工具类、常量类或接口方法",
+            "callers": [
+                "OrderServiceImpl.submitOrder(OrdersSubmitDTO ordersSubmitDTO)"
+            ]
+        },
+        {
+            "method": "OrderServiceImpl.setStatus()",
+            "count": 1,
+            "source_code": "工具类、常量类或接口方法",
+            "callers": [
+                "OrderServiceImpl.submitOrder(OrdersSubmitDTO ordersSubmitDTO)"
+            ]
+        }
+    ]
 }

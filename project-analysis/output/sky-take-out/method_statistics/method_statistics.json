@@ -1,0 +1,204 @@
+{
+    "top_methods": [
+        {
+            "method": "Result.success(T object)",
+            "count": 56,
+            "source_code": "    public static <T> Result<T> success(T object) {\n        Result<T> result = new Result<T>();\n        result.data = object;\n        result.code = 1;\n        return result;\n    }",
+            "callers": [
+                "CommonController.upload(MultipartFile file)",
+                "DishController.save(@RequestBody DishDTO dishDTO)",
+                "DishController.page(DishPageQueryDTO dishPageQueryDTO)",
+                "DishController.delete(@RequestParam List<Long> ids)",
+                "DishController.getById(@PathVariable Long id)",
+                "DishController.update(@RequestBody DishDTO dishDTO)",
+                "DishController.list(Long categoryId)",
+                "DishController.startOrStop(@PathVariable Integer status, Long id)",
+                "EmployeeController.login(@RequestBody EmployeeLoginDTO employeeLoginDTO)",
+                "EmployeeController.logout()",
+                "EmployeeController.save(@RequestBody EmployeeDTO employeeDTO)",
+                "EmployeeController.page(EmployeePageQueryDTO employeePageQueryDTO)",
+                "EmployeeController.startOrStop(@PathVariable Integer status , Long id)",
+                "EmployeeController.getById(@PathVariable Long id)",
+                "EmployeeController.update(@RequestBody EmployeeDTO employeeDTO)",
+                "OrderController.conditionSearch(OrdersPageQueryDTO ordersPageQueryDTO)",
+                "OrderController.statistics()",
+                "OrderController.details(@PathVariable(\"id\")",
+                "OrderController.confirm(@RequestBody OrdersConfirmDTO ordersConfirmDTO)",
+                "OrderController.rejection(@RequestBody OrdersRejectionDTO ordersRejectionDTO)",
+                "OrderController.cancel(@RequestBody OrdersCancelDTO ordersCancelDTO)",
+                "OrderController.delevery(@PathVariable(\"id\")",
+                "OrderController.complete(@PathVariable(\"id\")",
+                "OrderController.submit(@RequestBody OrdersSubmitDTO ordersSubmitDTO)",
+                "OrderController.payment(@RequestBody OrdersPaymentDTO ordersPaymentDTO)",
+                "OrderController.page(int page, int pageSize , Integer status)",
+                "OrderController.cancel(@PathVariable(\"id\")",
+                "OrderController.repetition(@PathVariable Long id)",
+                "OrderController.reminder(@PathVariable(\"id\")",
+                "SetmealController.save(@RequestBody SetmealDTO setmealDTO)",
+                "SetmealController.page(SetmealPageQueryDTO setmealPageQueryDTO)",
+                "SetmealController.delete(@RequestParam List<Long> ids)",
+                "SetmealController.getById(@PathVariable Long id)",
+                "SetmealController.update(@RequestBody SetmealDTO setmealDTO)",
+                "SetmealController.startOrStop(@PathVariable Integer status,Long id)",
+                "SetmealController.list(Long categoryId)",
+                "SetmealController.dishList(@PathVariable(\"id\")",
+                "ShopController.setStatus(@PathVariable Integer status)",
+                "ShopController.getStatus()",
+                "WorkSpaceController.businessData()",
+                "WorkSpaceController.orderOverView()",
+                "WorkSpaceController.dishOverView()",
+                "WorkSpaceController.setmealOverView()",
+                "AddressBookController.list()",
+                "AddressBookController.save(@RequestBody AddressBook addressBook)",
+                "AddressBookController.getById(@PathVariable Long id)",
+                "AddressBookController.update(@RequestBody AddressBook addressBook)",
+                "AddressBookController.setDefault(@RequestBody AddressBook addressBook)",
+                "AddressBookController.deleteById(Long id)",
+                "AddressBookController.getDefault()",
+                "CategoryController.list(Integer type)",
+                "ShoppingCartController.add(@RequestBody ShoppingCartDTO shoppingCartDTO)",
+                "ShoppingCartController.list()",
+                "ShoppingCartController.clean()",
+                "ShoppingCartController.sub(@RequestBody ShoppingCartDTO shoppingCartDTO)",
+                "UserController.login(@RequestBody UserLoginDTO userLoginDTO)"
+            ]
+        },
+        {
+            "method": "BeanUtils.copyProperties()",
+            "count": 18,
+            "source_code": "工具类、常量类或接口方法",
+            "callers": [
+                "CategoryServiceImpl.save(CategoryDTO categoryDTO)",
+                "CategoryServiceImpl.update(CategoryDTO categoryDTO)",
+                "DishServiceImpl.savewithFlavor(DishDTO dishDTO)",
+                "DishServiceImpl.getByIdwithFlavor(Long id)",
+                "DishServiceImpl.updatewithFlavor(DishDTO dishDTO)",
+                "DishServiceImpl.listWithFlavor(Dish dish)",
+                "EmployeeServiceImpl.save(EmployeeDTO employeeDTO)",
+                "EmployeeServiceImpl.update(EmployeeDTO employeeDTO)",
+                "OrderServiceImpl.submitOrder(OrdersSubmitDTO ordersSubmitDTO)",
+                "OrderServiceImpl.pageQuery4User(int pageNum, int pageSize, Integer status)",
+                "OrderServiceImpl.details(Long id)",
+                "OrderServiceImpl.repetition(Long id)",
+                "OrderServiceImpl.getOrderVOList(Page<Orders> page)",
+                "SetmealServiceImpl.saveWithDish(SetmealDTO setmealDTO)",
+                "SetmealServiceImpl.getByIdWithDish(Long id)",
+                "SetmealServiceImpl.updateWithDish(SetmealDTO setmealDTO)",
+                "ShoppingCartServiceImpl.addShoppingCart(ShoppingCartDTO shoppingCartDTO)",
+                "ShoppingCartServiceImpl.subShoppingCart(ShoppingCartDTO shoppingCartDTO)"
+            ]
+        },
+        {
+            "method": "OrderServiceImpl.getById()",
+            "count": 10,
+            "source_code": "工具类、常量类或接口方法",
+            "callers": [
+                "OrderServiceImpl.submitOrder(OrdersSubmitDTO ordersSubmitDTO)",
+                "OrderServiceImpl.payment(OrdersPaymentDTO ordersPaymentDTO)",
+                "OrderServiceImpl.details(Long id)",
+                "OrderServiceImpl.getAddress(Long addressBookId)",
+                "OrderServiceImpl.userCancelById(Long id)",
+                "OrderServiceImpl.rejection(OrdersRejectionDTO ordersRejectionDTO)",
+                "OrderServiceImpl.cancel(OrdersCancelDTO ordersCancelDTO)",
+                "OrderServiceImpl.delivery(Long id)",
+                "OrderServiceImpl.complete(Long id)",
+                "OrderServiceImpl.reminder(Long id)"
+            ]
+        },
+        {
+            "method": "BaseContext.getCurrentId()",
+            "count": 8,
+            "source_code": "    public static Long getCurrentId() {\n        return threadLocal.get();\n    }",
+            "callers": [
+                "AutoFillAspect.autoFill(JoinPoint joinPoint)",
+                "CategoryServiceImpl.startOrStop(Integer status, Long id)",
+                "OrderServiceImpl.submitOrder(OrdersSubmitDTO ordersSubmitDTO)",
+                "OrderServiceImpl.payment(OrdersPaymentDTO ordersPaymentDTO)",
+                "OrderServiceImpl.repetition(Long id)",
+                "ShoppingCartServiceImpl.addShoppingCart(ShoppingCartDTO shoppingCartDTO)",
+                "ShoppingCartServiceImpl.showShoppingCart()",
+                "ShoppingCartServiceImpl.cleanShoppingCart()"
+            ]
+        },
+        {
+            "method": "EntityUtils.toString()",
+            "count": 7,
+            "source_code": "工具类、常量类或接口方法",
+            "callers": [
+                "HttpClientUtil.doGet(String url,Map<String,String> paramMap)",
+                "HttpClientUtil.doPost(String url, Map<String, String> paramMap)",
+                "HttpClientUtil.doPost4Json(String url, Map<String, String> paramMap)",
+                "WeChatPayUtil.post(String url, String body)",
+                "WeChatPayUtil.get(String url)",
+                "HttpClientTest.testGET()",
+                "HttpClientTest.testPOST()"
+            ]
+        },
+        {
+            "method": "OrderServiceImpl.setStatus()",
+            "count": 7,
+            "source_code": "工具类、常量类或接口方法",
+            "callers": [
+                "OrderServiceImpl.submitOrder(OrdersSubmitDTO ordersSubmitDTO)",
+                "OrderServiceImpl.pageQuery4User(int pageNum, int pageSize, Integer status)",
+                "OrderServiceImpl.userCancelById(Long id)",
+                "OrderServiceImpl.rejection(OrdersRejectionDTO ordersRejectionDTO)",
+                "OrderServiceImpl.cancel(OrdersCancelDTO ordersCancelDTO)",
+                "OrderServiceImpl.delivery(Long id)",
+                "OrderServiceImpl.complete(Long id)"
+            ]
+        },
+        {
+            "method": "OrderServiceImpl.update()",
+            "count": 7,
+            "source_code": "工具类、常量类或接口方法",
+            "callers": [
+                "OrderServiceImpl.paySuccess(String outTradeNo)",
+                "OrderServiceImpl.userCancelById(Long id)",
+                "OrderServiceImpl.confirm(OrdersConfirmDTO ordersConfirmDTO)",
+                "OrderServiceImpl.rejection(OrdersRejectionDTO ordersRejectionDTO)",
+                "OrderServiceImpl.cancel(OrdersCancelDTO ordersCancelDTO)",
+                "OrderServiceImpl.delivery(Long id)",
+                "OrderServiceImpl.complete(Long id)"
+            ]
+        },
+        {
+            "method": "LocalDateTime.now()",
+            "count": 6,
+            "source_code": "工具类、常量类或接口方法",
+            "callers": [
+                "AutoFillAspect.autoFill(JoinPoint joinPoint)",
+                "WorkSpaceController.businessData()",
+                "CategoryServiceImpl.startOrStop(Integer status, Long id)",
+                "OrderServiceImpl.payment(OrdersPaymentDTO ordersPaymentDTO)",
+                "OrderServiceImpl.paySuccess(String outTradeNo)",
+                "UserServiceImpl.wxLogin(UserLoginDTO userLoginDTO)"
+            ]
+        },
+        {
+            "method": "PageHelper.startPage()",
+            "count": 6,
+            "source_code": "工具类、常量类或接口方法",
+            "callers": [
+                "CategoryServiceImpl.pageQuery(CategoryPageQueryDTO categoryPageQueryDTO)",
+                "DishServiceImpl.pageQuery(DishPageQueryDTO dishPageQueryDTO)",
+                "EmployeeServiceImpl.pageQuery(EmployeePageQueryDTO employeePageQueryDTO)",
+                "OrderServiceImpl.pageQuery4User(int pageNum, int pageSize, Integer status)",
+                "OrderServiceImpl.conditionSearch(OrdersPageQueryDTO ordersPageQueryDTO)",
+                "SetmealServiceImpl.pageQuery(SetmealPageQueryDTO setmealPageQueryDTO)"
+            ]
+        },
+        {
+            "method": "HttpClients.createDefault()",
+            "count": 5,
+            "source_code": "工具类、常量类或接口方法",
+            "callers": [
+                "HttpClientUtil.doGet(String url,Map<String,String> paramMap)",
+                "HttpClientUtil.doPost(String url, Map<String, String> paramMap)",
+                "HttpClientUtil.doPost4Json(String url, Map<String, String> paramMap)",
+                "HttpClientTest.testGET()",
+                "HttpClientTest.testPOST()"
+            ]
+        }
+    ]
+}
